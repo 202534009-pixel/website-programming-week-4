@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daerah Pantai Tempat Tinggal Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Pantai.jpg" type="image/jpeg">
+</head>
+
+<body>
+
+  <header>
+    <h1>Informasi Pantai</h1>
+
+    <nav aria-label="Navigasi utama">
+      <a href="#profil" class="nav-link">Profil</a>
+      <a href="#potensi" class="nav-link">Potensi</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="profil" class="card">
+      <h2>Profil Daerah</h2>
+
+      <p>
+        Asal sekolah: SMAK Santo Yosef.
+      </p>
+
+      <!-- Gambar SMAK Santo Yosef -->
+      <img
+        src="sekolah.jpg"
+        alt="logo Smak Santo Yosef"
+      >
+      <p>
+        SMAK Santo Yosef merupakan salah satu sekolah yang menjadi
+        tempat untuk mendapatkan pendidikan dan mengembangkan
+        pengetahuan serta keterampilan siswa. Sekolah ini memberikan
+        kesempatan kepada siswa untuk belajar, mengembangkan potensi,
+        dan mempersiapkan diri untuk melanjutkan pendidikan maupun
+        menghadapi dunia kerja.
+      </p>
+
+      <h2>Keindahan Pantai</h2>
+
+      <p>
+        Keindahan pantai di daerah sayadapat dinikmati melalui pemandangan laut,
+        pasir pantai, serta suasana alam yang tenang. Pantai juga
+        dapat menjadi tempat untuk melakukan berbagai kegiatan
+        seperti berjalan-jalan dan menikmati matahari terbenam.
+      </p>
+
+      <img
+        src="Pantai.jpg"
+        alt="Pemandangan pantai di Maumere"
+      >
+
+    </article>
+
+    <section id="potensi">
+      <h2>Potensi Pantai</h2>
+
+      <p>
+        Pantai memiliki berbagai potensi yang dapat dikembangkan,
+        seperti pariwisata, kegiatan nelayan, kuliner hasil laut,
+        serta usaha masyarakat di sekitar kawasan pantai.
+      </p>
+
+      <p>
+        Pengembangan potensi pantai perlu dilakukan dengan tetap
+        menjaga kebersihan dan kelestarian lingkungan agar keindahan
+        pantai dapat dinikmati dalam jangka panjang.
+      </p>
+    </section>
+
+    <section id="kontak">
+      <h2>Kirim Pesan</h2>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="nama">Nama lengkap</label>
+          <input
+            id="nama"
+            name="nama"
+            type="text"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="email">Alamat email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            minlength="10"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Kirim pesan</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Dibuat untuk Website Programming.</p>
+  </footer>
+
+</body>
+</html>
