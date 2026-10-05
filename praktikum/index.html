@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Daerah Pantai Tempat Tinggal Saya</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Pantai.jpg" type="image/jpeg">
 </head>
@@ -15,113 +17,201 @@
     <h1>Informasi Pantai</h1>
 
     <nav aria-label="Navigasi utama">
-      <a href="#profil" class="nav-link">Profil</a>
-      <a href="#potensi" class="nav-link">Potensi</a>
-      <a href="#kontak" class="nav-link">Kontak</a>
+      <ul class="nav-list">
+        <li>
+          <a href="#profil" class="nav-link">Profil</a>
+        </li>
+
+        <li>
+          <a href="#potensi" class="nav-link">Potensi</a>
+        </li>
+
+        <li>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <div class="page-layout">
 
-    <article id="profil" class="card">
-      <h2>Profil Daerah</h2>
+    <main>
 
-      <p>
-        Asal sekolah: SMAK Santo Yosef.
-      </p>
+      <!-- PROFIL -->
+      <article id="profil" class="card">
 
-      <!-- Gambar SMAK Santo Yosef -->
-      <img
-        src="sekolah.jpg"
-        alt="logo Smak Santo Yosef"
+        <h2>Profil Daerah</h2>
+
+        <p>
+          Asal sekolah: SMAK Santo Yosef.
+        </p>
+
+        <img
+          src="sekolah.jpg"
+          alt="Logo SMAK Santo Yosef"
+        >
+
+        <p>
+          SMAK Santo Yosef merupakan salah satu sekolah yang menjadi
+          tempat untuk mendapatkan pendidikan dan mengembangkan
+          pengetahuan serta keterampilan siswa. Sekolah ini memberikan
+          kesempatan kepada siswa untuk belajar, mengembangkan potensi,
+          dan mempersiapkan diri untuk melanjutkan pendidikan maupun
+          menghadapi dunia kerja.
+        </p>
+
+        <h2>Keindahan Pantai</h2>
+
+        <p>
+          Keindahan pantai di daerah saya dapat dinikmati melalui
+          pemandangan laut, pasir pantai, serta suasana alam yang tenang.
+          Pantai juga dapat menjadi tempat untuk melakukan berbagai
+          kegiatan seperti berjalan-jalan dan menikmati matahari terbenam.
+        </p>
+
+        <img
+          src="Pantai.jpg"
+          alt="Pemandangan pantai di Maumere"
+        >
+
+      </article>
+
+
+      <!-- POTENSI PANTAI -->
+      <section
+        id="potensi"
+        aria-labelledby="potensi-judul"
       >
-      <p>
-        SMAK Santo Yosef merupakan salah satu sekolah yang menjadi
-        tempat untuk mendapatkan pendidikan dan mengembangkan
-        pengetahuan serta keterampilan siswa. Sekolah ini memberikan
-        kesempatan kepada siswa untuk belajar, mengembangkan potensi,
-        dan mempersiapkan diri untuk melanjutkan pendidikan maupun
-        menghadapi dunia kerja.
-      </p>
 
-      <h2>Keindahan Pantai</h2>
+        <h2 id="potensi-judul">Potensi Pantai</h2>
 
-      <p>
-        Keindahan pantai di daerah sayadapat dinikmati melalui pemandangan laut,
-        pasir pantai, serta suasana alam yang tenang. Pantai juga
-        dapat menjadi tempat untuk melakukan berbagai kegiatan
-        seperti berjalan-jalan dan menikmati matahari terbenam.
-      </p>
+        <div class="card-list">
 
-      <img
-        src="Pantai.jpg"
-        alt="Pemandangan pantai di Maumere"
-      >
+          <!-- Card Unggulan -->
+          <article class="card card--featured">
 
-    </article>
+            <span class="badge">Unggulan</span>
 
-    <section id="potensi">
-      <h2>Potensi Pantai</h2>
+            <h3>Pariwisata Pantai</h3>
 
-      <p>
-        Pantai memiliki berbagai potensi yang dapat dikembangkan,
-        seperti pariwisata, kegiatan nelayan, kuliner hasil laut,
-        serta usaha masyarakat di sekitar kawasan pantai.
-      </p>
+            <p>
+              Pantai dapat menjadi tempat wisata yang menarik
+              untuk masyarakat dan pengunjung.
+            </p>
 
-      <p>
-        Pengembangan potensi pantai perlu dilakukan dengan tetap
-        menjaga kebersihan dan kelestarian lingkungan agar keindahan
-        pantai dapat dinikmati dalam jangka panjang.
-      </p>
-    </section>
+          </article>
 
-    <section id="kontak">
-      <h2>Kirim Pesan</h2>
 
-      <form action="#" method="post">
+          <!-- Card Kedua -->
+          <article class="card">
 
-        <div>
-          <label for="nama">Nama lengkap</label>
-          <input
-            id="nama"
-            name="nama"
-            type="text"
-            autocomplete="name"
-            required
-          >
+            <h3>Kegiatan Nelayan</h3>
+
+            <p>
+              Pantai dapat mendukung kegiatan nelayan dalam
+              mencari hasil laut untuk memenuhi kebutuhan masyarakat.
+            </p>
+
+          </article>
+
+
+          <!-- Card Ketiga -->
+          <article class="card">
+
+            <h3>Kuliner Hasil Laut</h3>
+
+            <p>
+              Hasil laut dapat diolah menjadi makanan dan
+              menjadi peluang usaha bagi masyarakat sekitar.
+            </p>
+
+          </article>
+
         </div>
 
-        <div>
-          <label for="email">Alamat email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            required
-          >
-        </div>
+      </section>
 
-        <div>
-          <label for="pesan">Pesan</label>
-          <textarea
-            id="pesan"
-            name="pesan"
-            minlength="10"
-            required
-          ></textarea>
-        </div>
 
-        <button type="submit">Kirim pesan</button>
+      <!-- KONTAK -->
+      <section id="kontak">
 
-      </form>
-    </section>
+        <h2>Kirim Pesan</h2>
 
-  </main>
+        <form action="#" method="post">
+
+          <div>
+            <label for="nama">Nama lengkap</label>
+
+            <input
+              id="nama"
+              name="nama"
+              type="text"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+
+          <div>
+            <label for="email">Alamat email</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+
+          <div>
+            <label for="pesan">Pesan</label>
+
+            <textarea
+              id="pesan"
+              name="pesan"
+              minlength="10"
+              required
+            ></textarea>
+          </div>
+
+
+          <button type="submit">
+            Kirim pesan
+          </button>
+
+        </form>
+
+      </section>
+
+    </main>
+
+
+    <!-- INFORMASI TAMBAHAN -->
+    <aside aria-labelledby="info-tambahan">
+
+      <h2 id="info-tambahan">
+        Informasi Tambahan
+      </h2>
+
+      <p>
+        Pantai memiliki potensi sebagai tempat wisata,
+        kegiatan nelayan, serta sumber ekonomi bagi masyarakat
+        di sekitar kawasan pantai.
+      </p>
+
+    </aside>
+
+  </div>
+
 
   <footer>
-    <p>Dibuat untuk Website Programming.</p>
+
+    <p>
+      Dibuat untuk Website Programming.
+    </p>
+
   </footer>
 
 </body>
