@@ -52,3 +52,11 @@ Saya memahami dan menyesuaikan kode dengan struktur website yang sudah dibuat se
 ## 6. Pemahaman
 
 Saya menggunakan AI sebagai alat bantu untuk memahami konsep dan menyelesaikan masalah, bukan sebagai pengganti pemahaman saya terhadap kode. Saya dapat menjelaskan fungsi Flexbox, `flex-wrap`, `gap`, `flex-basis`, `min-width`, serta perbedaan `position: relative` dan `position: absolute` pada tugas ini.
+
+## 7. Masalah Layout dan Perbaikan
+
+Pada saat pengujian, layout perlu tetap dapat digunakan pada layar yang sempit agar `main` dan `aside` tidak menyebabkan horizontal scroll. Saya menggunakan `flex-wrap: wrap` pada `.page-layout` dan mengatur `flex-basis: 100%` pada layar dengan lebar maksimal 40rem.
+
+Saya menguji halaman pada lebar sekitar 320 px dan hasilnya `main` dan `aside` dapat bertumpuk dengan baik serta tidak ditemukan horizontal scroll.
+
+Saya juga memperbaiki deklarasi `background` pada bagian `.page-layout > aside` setelah melakukan pemeriksaan kode.
